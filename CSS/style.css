@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  background-color: #404eed;
+  width: 100%;
+  height: 90px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header img {
+  width: 300px;
+  height: 56px;
+  margin-left: 60px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 790px;
+
+  display: flex;
+}
+
+.modelos {
+  background-color: #f2f2f2;
+  width: 50%;
+  height: 790px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.escolher-roupas {
+  background-color: #f2f2f2;
+  width: 60%;
+  height: 700px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.subtitulo {
+  color: #232323;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.opcoes-roupas {
+  background-color: #f2f2f2;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+}
+.produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.produto img {
+  width: 80px;
+  height: 80px;
+}
+
+input {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+
+  font-size: 14px;
+  font-weight: 400;
+  color: #818181;
+}
+
+button {
+  background-color: #c4c4c4;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+
+  color: #fcfcfc;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.ilustracao {
+  background-color: #404eed;
+  width: 50%;
+  height: 790px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 350px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.conteudo-footer {
+  background-color: #f2f2f2;
+  width: 80%;
+  height: 80%;
+}
+.conteudo-footer h3 {
+  color: #232323;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.ultimos-pedidos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.produto-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.produto-footer img {
+  width: 180px;
+  height: 200px;
+  margin: 15px 0;
+}
+.produto-footer p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+strong {
+  font-weight: 700;
+}
