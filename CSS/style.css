@@ -56,20 +56,30 @@ body {
   font-weight: 400;
 }
 
-.opcoes-roupas {
+.tipos-camisas,
+.golas,
+.tecidos {
   background-color: #f2f2f2;
   width: 100%;
 
   display: flex;
   justify-content: space-around;
 }
-.produto {
+.selecionado {
+  border: 2px solid #404eed;
+  border-radius: 100%;
+}
+.camisa,
+.gola,
+.tecido {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.produto img {
+.camisa img,
+.gola img,
+.tecido img {
   width: 80px;
   height: 80px;
 }
@@ -132,6 +142,7 @@ button {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  overflow-x: scroll;
 }
 .produto-footer {
   display: flex;
@@ -151,4 +162,8 @@ button {
 
 strong {
   font-weight: 700;
+}
+
+.botao-ativo {
+  background-color: #404eed;
 }

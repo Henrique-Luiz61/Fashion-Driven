@@ -29,60 +29,60 @@
                 <div class="subtitulo">
                     <h3>Escolha o modelo</h3>
                 </div>
-                <div class="opcoes-roupas">
-                    <div class="produto">
+                <div class="tipos-camisas">
+                    <div onclick="selecionaCamisa(this)" class="camisa">
                         <img src="./IMG/tshirt.png">
-                        <p class="descrição-roupa">T-shirt</p>
+                        <p class="descrição-roupa">t-shirt</p>
                     </div>
 
-                    <div class="produto">
+                    <div onclick="selecionaCamisa(this)" class="camisa">
                         <img src="./IMG/Camiseta.png">
-                        <p class="descrição-roupa">Camiseta</p>
+                        <p class="descrição-roupa">top-tank</p>
                     </div>
 
-                    <div class="produto">
+                    <div onclick="selecionaCamisa(this)" class="camisa">
                         <img src="./IMG/Mangalonga.png">
-                        <p class="descrição-roupa">Manga Longa</p>
+                        <p class="descrição-roupa">long</p>
                     </div>
                 </div>
 
                 <div class="subtitulo">
                     <h3>Escolha a gola</h3>
                 </div>
-                <div class="opcoes-roupas">
-                    <div class="produto">
+                <div class="golas">
+                    <div onclick=" selecionaGola(this)" class="gola">
                         <img src="./IMG/GolaV.png">
-                        <p class="descrição-roupa">Gola V</p>
+                        <p class="descrição-roupa">v-neck</p>
                     </div>
 
-                    <div class="produto">
+                    <div onclick=" selecionaGola(this)" class="gola">
                         <img src="./IMG/GolaRedonda.png">
-                        <p class="descrição-roupa">Gola Redonda</p>
+                        <p class="descrição-roupa">round</p>
                     </div>
 
-                    <div class="produto">
+                    <div onclick=" selecionaGola(this)" class="gola">
                         <img src="./IMG/GolaPolo.png">
-                        <p class="descrição-roupa">Gola Polo</p>
+                        <p class="descrição-roupa">polo</p>
                     </div>
                 </div>
 
                 <div class="subtitulo">
                     <h3>Escolha o tecido</h3>
                 </div>
-                <div class="opcoes-roupas">
-                    <div class="produto">
+                <div class="tecidos">
+                    <div onclick="selecionaTecido(this)" class="tecido">
                         <img src="./IMG/Seda.png">
-                        <p class="descrição-roupa">Seda</p>
+                        <p class="descrição-roupa">silk</p>
                     </div>
 
-                    <div class="produto">
+                    <div onclick="selecionaTecido(this)" class="tecido">
                         <img src="./IMG/Algodão.png">
-                        <p class="descrição-roupa">Algodão</p>
+                        <p class="descrição-roupa">cotton</p>
                     </div>
 
-                    <div class="produto">
+                    <div onclick="selecionaTecido(this)" class="tecido">
                         <img src="./IMG/Poliester.png">
-                        <p class="descrição-roupa">Poliéster</p>
+                        <p class="descrição-roupa">polyester</p>
                     </div>
                 </div>
 
@@ -90,9 +90,9 @@
                     <h3>Imagem de referência</h3>
                 </div>
 
-                <input type="url" value="Insira o link">
+                <input onclick="pegarLink()" type="url" placeholder="Insira o link">
 
-                <button>Confirmar pedido</button>
+                <button onclick="confirmarEncomenda()" disabled>Confirmar pedido</button>
             </div>
         </div>
 
@@ -134,5 +134,9 @@
         </div>
     </div>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script src="./script.js"></script>
 
 </html>
