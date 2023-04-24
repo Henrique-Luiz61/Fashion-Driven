@@ -13,10 +13,15 @@ function renderizarBlusasPedidas() {
   console.log(ultimosPedidos);
 
   for (let i = 0; i < ultimosPedidos.length; i++) {
-    divPedidos.innerHTML += `<div class="produto-footer">
+    if (ultimosPedidos[i].owner === "Henrique") {
+      divPedidos.innerHTML += `<div class="produto-footer">
         <img src="${ultimosPedidos[i].image}">
-        <p><strong>Criador:</strong> ${ultimosPedidos[i].author}</p>
+        <p><strong>Criador:</strong> ${ultimosPedidos[i].owner}</p>
      </div>`;
+
+      console.log(ultimosPedidos[i].image);
+      console.log(ultimosPedidos[i].owner);
+    }
   }
 }
 
@@ -116,7 +121,7 @@ function confirmarEncomenda() {
     neck: tipoGola,
     material: tipoTecido,
     image: textoLink,
-    owner: nomeUsuario,
+    owner: "Henrique",
     author: nomeUsuario,
   };
 
@@ -135,4 +140,6 @@ function confirmarEncomenda() {
   });
 
   linkReferencia.value = "";
+
+  buscarBlusas();
 }
